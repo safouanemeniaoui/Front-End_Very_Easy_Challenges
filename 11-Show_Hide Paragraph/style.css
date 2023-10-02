@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.main {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.main h2 {
+  width: fit-content;
+  background-color: rgb(0, 128, 100);
+  padding: 5px 20px;
+  margin-bottom: 20px;
+  color: white;
+  text-transform: capitalize;
+  border-radius: 10px;
+  cursor: pointer;
+  /* transition: 0.2s; */
+}
+
+.main ._active {
+  background-color: white;
+  border: 1px solid rgb(0, 128, 100);
+  color: rgb(0, 128, 100);
+  border-radius: 10px;
+  padding: 4px 20px;
+}
+
+.main p {
+  background-color: #eee;
+  padding: 20px;
+  text-transform: capitalize;
+}
+
+.active {
+  display: none;
+}

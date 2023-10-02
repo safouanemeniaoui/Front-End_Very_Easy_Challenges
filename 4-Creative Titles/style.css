@@ -1,0 +1,382 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+
+div {
+  margin: 40px 20px 0;
+}
+
+h3 {
+  text-transform: capitalize;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+div p:nth-of-type(1) {
+  width: 180px;
+  color: blue;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+}
+
+div p:nth-of-type(2) {
+  width: 180px;
+  color: rgb(196, 7, 7);
+  padding: 10px 0;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+}
+
+div p:nth-of-type(3) {
+  width: 180px;
+  color: rgb(6, 182, 6);
+  padding: 10px 0;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+}
+
+div p:nth-of-type(4) {
+  width: 180px;
+  color: rgb(199, 130, 2);
+  padding: 10px 0;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+}
+
+/* circle */
+.circle p:nth-of-type(1)::before {
+  content: "";
+  width: 200px;
+  height: 1.5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, blue 50%, #eee 50%);
+}
+
+.circle p:nth-of-type(1)::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: blue;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  border-radius: 50%;
+}
+
+.circle p:nth-of-type(2)::before {
+  content: "";
+  width: 200px;
+  height: 1.5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, rgb(196, 7, 7) 50%, #eee 50%);
+}
+
+.circle p:nth-of-type(2)::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: rgb(196, 7, 7);
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  border-radius: 50%;
+}
+
+.circle p:nth-of-type(3)::before {
+  content: "";
+  width: 200px;
+  height: 1.5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, rgb(6, 182, 6) 50%, #eee 50%);
+}
+
+.circle p:nth-of-type(3)::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: rgb(6, 182, 6);
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  border-radius: 50%;
+}
+
+.circle p:nth-of-type(4)::before {
+  content: "";
+  width: 200px;
+  height: 1.5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, rgb(199, 130, 2) 50%, #eee 50%);
+}
+
+.circle p:nth-of-type(4)::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: rgb(199, 130, 2);
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  border-radius: 50%;
+}
+
+/* box*/
+.box p:nth-of-type(1)::before {
+  content: "";
+  width: 200px;
+  height: 1.5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, blue 50%, #eee 50%);
+}
+
+.box p:nth-of-type(1)::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: blue;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.box p:nth-of-type(2)::before {
+  content: "";
+  width: 200px;
+  height: 1.5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, rgb(196, 7, 7) 50%, #eee 50%);
+}
+
+.box p:nth-of-type(2)::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: rgb(196, 7, 7);
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.box p:nth-of-type(3)::before {
+  content: "";
+  width: 200px;
+  height: 1.5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, rgb(6, 182, 6) 50%, #eee 50%);
+}
+
+.box p:nth-of-type(3)::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: rgb(6, 182, 6);
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.box p:nth-of-type(4)::before {
+  content: "";
+  width: 200px;
+  height: 1.5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, rgb(199, 130, 2) 50%, #eee 50%);
+}
+
+.box p:nth-of-type(4)::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: rgb(199, 130, 2);
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+/* triangle up*/
+.triangle-up p:nth-of-type(1)::before {
+  content: "";
+  width: 200px;
+  height: 1.5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, blue 50%, #eee 50%);
+}
+
+.triangle-up p:nth-of-type(1)::after {
+  content: "";
+  border: 8px solid;
+  border-color: transparent transparent blue transparent;
+  position: absolute;
+  bottom: 0px;
+  left: -2px;
+}
+
+.triangle-up p:nth-of-type(2)::before {
+  content: "";
+  width: 200px;
+  height: 1.5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, rgb(196, 7, 7) 50%, #eee 50%);
+}
+
+.triangle-up p:nth-of-type(2)::after {
+  content: "";
+  border: 8px solid;
+  border-color: transparent transparent rgb(196, 7, 7) transparent;
+  position: absolute;
+  bottom: 0px;
+  left: -2px;
+}
+
+.triangle-up p:nth-of-type(3)::before {
+  content: "";
+  width: 200px;
+  height: 1.5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, rgb(6, 182, 6) 50%, #eee 50%);
+}
+
+.triangle-up p:nth-of-type(3)::after {
+  content: "";
+  border: 8px solid;
+  border-color: transparent transparent rgb(6, 182, 6) transparent;
+  position: absolute;
+  bottom: 0px;
+  left: -2px;
+}
+
+.triangle-up p:nth-of-type(4)::before {
+  content: "";
+  width: 200px;
+  height: 1.5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, rgb(199, 130, 2) 50%, #eee 50%);
+}
+
+.triangle-up p:nth-of-type(4)::after {
+  content: "";
+  border: 8px solid;
+  border-color: transparent transparent rgb(199, 130, 2) transparent;
+  position: absolute;
+  bottom: 0px;
+  left: -2px;
+}
+
+/* triangle down*/
+.triangle-down p:nth-of-type(1)::before {
+  content: "";
+  width: 200px;
+  height: 1.5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, blue 50%, #eee 50%);
+}
+
+.triangle-down p:nth-of-type(1)::after {
+  content: "";
+  border: 8px solid;
+  border-color: blue transparent transparent transparent;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transform: translate(0, 100%);
+}
+
+.triangle-down p:nth-of-type(2)::before {
+  content: "";
+  width: 200px;
+  height: 1.5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, rgb(196, 7, 7) 50%, #eee 50%);
+}
+
+.triangle-down p:nth-of-type(2)::after {
+  content: "";
+  border: 8px solid;
+  border-color: rgb(196, 7, 7) transparent transparent transparent;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transform: translate(0, 100%);
+}
+
+.triangle-down p:nth-of-type(3)::before {
+  content: "";
+  width: 200px;
+  height: 1.5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, rgb(6, 182, 6) 50%, #eee 50%);
+}
+
+.triangle-down p:nth-of-type(3)::after {
+  content: "";
+  border: 8px solid;
+  border-color: rgb(6, 182, 6) transparent transparent transparent;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  transform: translate(0, 100%);
+}
+
+.triangle-down p:nth-of-type(4)::before {
+  content: "";
+  width: 200px;
+  height: 1.5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, rgb(199, 130, 2) 50%, #eee 50%);
+}
+
+.triangle-down p:nth-of-type(4)::after {
+  content: "";
+  border: 8px solid;
+  border-color: rgb(199, 130, 2) transparent transparent transparent;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  transform: translate(0, 100%);
+}

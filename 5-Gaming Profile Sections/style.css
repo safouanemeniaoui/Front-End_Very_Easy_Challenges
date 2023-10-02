@@ -1,0 +1,354 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --mainMargin: 10px;
+  --mainPading: 20px;
+  --secondPadding: 10px;
+  --fontColor: rgb(70, 70, 70);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+/* Start General Style*/
+
+.main {
+  background-color: #eee;
+  width: 900px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+@media (max-width: 992px) {
+  .main {
+    background-color: #eee;
+    width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+}
+
+hr {
+  width: calc(100% - 20px);
+  border: 1px solid #c5c5c5;
+  margin: 20px auto;
+}
+
+.block {
+  background-color: white;
+  width: calc(100% - 20px);
+  margin: var(--mainMargin) auto;
+  padding: var(--mainPading);
+}
+
+.title {
+  padding: var(--secondPadding) 0;
+  text-transform: capitalize;
+  color: black;
+  margin-bottom: var(--mainMargin);
+  position: relative;
+}
+
+.title::before {
+  content: "";
+  border: 7px solid;
+  border-color: #009688 transparent transparent transparent;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(0, 100%);
+}
+
+.title::after {
+  content: "";
+  width: 200px;
+  height: 2px;
+  background-image: linear-gradient(to right, #009688 70%, #eee 70%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #eb376b;
+  padding: 5px;
+  color: white;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+/* End General Style*/
+
+/* Start Intro*/
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.level {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  .level {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.level img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  position: relative;
+  border: 4px solid #c6c6c6;
+}
+
+.level h3 {
+  text-transform: capitalize;
+}
+
+.level .lv {
+  width: 180px;
+  height: 20px;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #009688 75%, #eee 75%);
+  margin: var(--mainMargin);
+}
+
+.level p {
+  font-size: 13px;
+  color: var(--fontColor);
+}
+
+.level p span {
+  color: #009688;
+  font-weight: bold;
+}
+
+.desc {
+  width: 75%;
+  position: relative;
+}
+
+@media (max-width: 992px) {
+  .desc {
+    width: 100%;
+    position: relative;
+  }
+}
+
+.desc::before {
+  content: "";
+  height: 287px;
+  width: 1px;
+  background-color: #b7b7b7;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+}
+
+@media (max-width: 992px) {
+  .desc::before {
+    content: "";
+    height: 0.5px;
+    width: calc(100% + 40px);
+    background-color: #b7b7b7;
+    position: absolute;
+    top: 5px;
+    left: -20px;
+  }
+}
+
+.desc::after {
+  content: "140 days in the ship";
+  text-transform: capitalize;
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  font-size: 14px;
+  color: var(--fontColor);
+}
+
+.desc h2 {
+  padding: var(--secondPadding);
+  text-transform: capitalize;
+  margin-bottom: var(--mainMargin);
+  position: relative;
+}
+
+@media (max-width: 992px) {
+  .desc h2 {
+    padding: var(--secondPadding);
+    text-transform: capitalize;
+    margin-bottom: var(--mainMargin);
+    margin-top: var(--mainMargin);
+    position: relative;
+    text-align: center;
+  }
+}
+
+.desc h2::after {
+  content: "";
+  width: 200px;
+  height: 2px;
+  background-image: linear-gradient(to right, #009688 70%, #eee 70%);
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+
+@media (max-width: 992px) {
+  .desc h2::after {
+    content: "";
+    width: 200px;
+    height: 2px;
+    background-image: linear-gradient(to right, #009688 70%, #eee 70%);
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+  }
+}
+
+.desc p {
+  padding: var(--secondPadding);
+  line-height: 1.8;
+  color: var(--fontColor);
+}
+
+/* End Intro*/
+
+/*Start Point Logs*/
+
+.point-log div {
+  padding: 20px 0;
+  text-transform: capitalize;
+  color: var(--fontColor);
+}
+
+.point-log div:nth-of-type(2) {
+  border-top: 1.5px solid #eee;
+  border-bottom: 1.5px solid #eee;
+}
+
+.point-log div span:first-child {
+  color: #009688;
+  font-weight: 900;
+}
+
+.point-log div span:last-child {
+  color: #eb376b;
+  font-weight: 900;
+}
+
+/*End Point Logs*/
+
+/*Start Trophies*/
+
+.trophies .tr-im {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.trophies .tr-im img {
+  width: calc(10% - 7px);
+  margin-top: 7px;
+  background-color: black;
+  border-radius: 20px;
+}
+
+@media (max-width: 992px) {
+  .trophies .tr-im img {
+    width: calc(10% - 3px);
+    margin-top: 7px;
+    background-color: black;
+    border-radius: 20px;
+  }
+}
+
+.trophies .tr-im .im-op {
+  opacity: 10%;
+}
+
+/*End Trophies*/
+
+/*Start Ladder News*/
+
+.ladder-news p {
+  padding: var(--secondPadding) 0;
+  text-transform: capitalize;
+  color: var(--fontColor);
+}
+
+.ladder-news p span:first-of-type {
+  color: red;
+  font-weight: bold;
+}
+
+.ladder-news p span:last-of-type {
+  color: #21a2f5;
+  font-weight: bold;
+}
+
+/*End Ladder News*/
+
+/*Start Your Powers*/
+
+.powers div {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+.powers div:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+
+.powers div p {
+  color: var(--fontColor);
+}
+
+.powers div span {
+  color: green;
+  font-weight: bold;
+}
+
+.powers div:nth-of-type(3) span,
+.powers div:nth-of-type(5) span {
+  color: red;
+}
+
+/*End Your Powers*/

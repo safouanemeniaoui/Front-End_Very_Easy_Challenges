@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main {
+  /* background-color: #eee; */
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 20px 20px 0;
+}
+
+/* Start Category*/
+
+.category,
+.gallery,
+.archives {
+  margin-bottom: 20px;
+  padding: 20px 10px;
+}
+
+.category h3,
+.gallery h3,
+.archives h3 {
+  width: 100%;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.category h3::after,
+.gallery h3::after,
+.archives h3::after {
+  content: "";
+  background-color: #21a7cf;
+  width: 60px;
+  height: 2px;
+  position: absolute;
+  top: 10px;
+  right: 80px;
+}
+
+@media (max-width: 450px) {
+  .category h3::after,
+  .gallery h3::after,
+  .archives h3::after {
+    display: none;
+  }
+}
+.category div {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  text-transform: capitalize;
+}
+
+.category div:not(:last-of-type) {
+  border-bottom: 1px solid #bebebe;
+}
+
+.category div > span {
+  background-color: #bebebe;
+  padding: 3px;
+  font-size: 12px;
+  border-radius: 2px;
+}
+
+/* End Category*/
+
+/* Start Gallery*/
+
+.gallery h3::after,
+.archives h3::after {
+  top: 10px;
+  right: 120px;
+}
+
+.gallery div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gallery div img {
+  width: 30%;
+  background-color: black;
+}
+
+/* End Gallery*/
+
+/* Start Archives*/
+
+.archives div {
+  display: flex;
+  padding: 10px 0;
+}
+
+.archives div span {
+  margin-right: 10px;
+}
+
+.archives div p {
+  text-transform: capitalize;
+}
+
+/* End Archives*/
+
+/* Me */
+
+.colors {
+  margin: 20px 20px 0;
+  width: 10%;
+  display: flex;
+  /* justify-content: flex-start; */
+  align-items: center;
+  flex-direction: column;
+}
+
+.open {
+  cursor: pointer;
+}
+
+.colors .close {
+  display: none;
+  cursor: pointer;
+}
+
+.colors .list {
+  padding: 10px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+ul li {
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #eee;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+ul li:not(.active) {
+  opacity: 30%;
+}
+
+ul li:hover {
+  transform: scale(1.5);
+  opacity: 100%;
+}
+
+ul li:nth-of-type(1) {
+  background-color: red;
+}
+
+ul li:nth-of-type(2) {
+  background-color: green;
+}
+
+ul li:nth-of-type(3) {
+  background-color: orange;
+}
+
+ul li:nth-of-type(4) {
+  background-color: black;
+}

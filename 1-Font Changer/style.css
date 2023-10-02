@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#font {
+  width: 300px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  display: block;
+}
+
+.result {
+  margin: 50px auto;
+  width: 300px;
+  padding: 10px 20px;
+  background-color: #eee;
+  text-transform: capitalize;
+  text-align: center;
+  font-family: Verdana;
+  border-radius: 2px;
+}

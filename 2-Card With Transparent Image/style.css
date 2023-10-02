@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main {
+  width: 500px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.main img {
+  position: absolute;
+  top: -30px;
+  left: 190px;
+  z-index: 1;
+}
+
+.main > .card {
+  background-color: white;
+  padding: 30px;
+  width: 75%;
+  height: 65%;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0 0 10px 0 #c4c4c4ac;
+}
+
+.main > .card::after {
+  content: "A+";
+  background-color: #3c75bb;
+  color: white;
+  padding: 7px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -15px;
+  right: 15px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.main .card h2 {
+  text-align: center;
+  color: #3c75bb;
+  text-transform: capitalize;
+  margin: 5px;
+}
+
+.main .card > p {
+  text-align: center;
+  color: #8e8e8e;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+hr {
+  margin: 20px 0;
+  border: 1px solid #eee;
+}
+
+.facebook,
+.twitter,
+.linkedin {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #eee;
+  text-transform: capitalize;
+  font-size: 14px;
+}
